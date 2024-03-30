@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.cc.mapper.AccountMapper">
+    <resultMap id="resultMap" type="com.cc.bean.Account">
+        <result column="id" property="id"/>
+        <result column="name" property="name"/>
+    </resultMap>
+
+    <select id="findAll" resultMap="resultMap">
+        SELECT id, name FROM account
+    </select>
+
+    <select id="findById" resultMap="resultMap">
+        SELECT id, name FROM account where id = #{id}
+    </select>
+</mapper>
