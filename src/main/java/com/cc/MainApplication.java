@@ -16,9 +16,9 @@ public class MainApplication {
     public static void main(String[] args) {
         ConfigurableApplicationContext context = SpringApplication.run(MainApplication.class, args);
         String[] beanNames = context.getBeanDefinitionNames();
-//        for (String  beanName : beanNames) {
-//            System.out.println(beanName);
-//        }
+        for (String  beanName : beanNames) {
+            System.out.println(beanName);
+        }
 
         System.out.println("==========================");
         log.info("spring boot started");
