@@ -49,4 +49,25 @@ public class MainApplicationTest {
     static void afterAll() {
         System.out.println("after all");
     }
+
+    @Test
+    public void testVersion(){
+        City city = this.cityService.getById(1);
+        city.setCityName("HangZhou");
+        boolean result = this.cityService.saveOrUpdate(city);
+        Assertions.assertTrue(result);
+    }
+
+    @Test
+    public void testLogicDelete(){
+        City city = new City();
+        city.setProvince("广东");
+        city.setCityName("深圳");
+        boolean result = cityService.save(city);
+        Assertions.assertTrue(result);
+
+        boolean deleted = this.cityService.removeById(city.getId());
+        Assertions.assertTrue(deleted);
+
+    }
 }
