@@ -34,7 +34,7 @@ public class TestMainSshj {
                 // 检查远程文件是否存在
                 FileAttributes fileAttributes = sftpClient.statExistence(remoteFilePath);
                 System.out.println("fileAttributes: " + fileAttributes);
-                List<RemoteResourceInfo> ls = sftpClient.ls("/files/pp_ci/");
+                List<RemoteResourceInfo> ls = sftpClient.ls("/files/pp_ci/123");
                 ls.forEach(i -> {
                     System.out.println(i.getPath());
                 });

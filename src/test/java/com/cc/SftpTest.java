@@ -15,12 +15,12 @@ import org.junit.runners.JUnit4;
 public class SftpTest {
 
     @Test
-    //sftp -oPort=22021 NFP_SFTP@182.93.45.147
+    //sftp -oPort=22021 PP_SFTP@182.93.45.147
     public void test(){
         String host = "182.93.45.147"; // SFTP服务器地址
         int port = 22021; // SFTP服务器端口
-        String username = "NFP_SFTP"; // 用户名
-        String password = "NFPsftp0423"; // 密码
+        String username = "PP_SFTP"; // 用户名
+        String password = "PPsftp0423"; // 密码
 
         try {
             JSch jsch = new JSch();
