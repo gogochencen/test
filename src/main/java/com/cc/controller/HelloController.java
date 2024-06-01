@@ -78,6 +78,6 @@ public class HelloController {
 
     @RequestMapping("pageCity")
     public Page<City> pageCity(@RequestParam(value = "page", defaultValue = "1") Integer page){
-        return cityService.page(new Page<>(page,2));
+        return cityService.page(new Page<>(page,3));
     }
 }

@@ -20,7 +20,7 @@ public class MainApplication {
             System.out.println(beanName);
         }
 
-        log.info("spring boot started!");
+        log.info("spring boot started!!!!!!!");
 
         boolean containsCC = context.containsBean("cc");
         System.out.println(containsCC);
