@@ -12,7 +12,7 @@ import org.junit.runners.JUnit4;
  * @date 2024/5/17
  */
 @RunWith(JUnit4.class)
-public class SftpTest {
+public class JschTest {
 
     @Test
     //sftp -oPort=22021 PP_SFTP@182.93.45.147
