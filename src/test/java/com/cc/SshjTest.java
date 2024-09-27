@@ -5,6 +5,9 @@ import net.schmizz.sshj.sftp.FileAttributes;
 import net.schmizz.sshj.sftp.RemoteResourceInfo;
 import net.schmizz.sshj.sftp.SFTPClient;
 import net.schmizz.sshj.transport.verification.PromiscuousVerifier;
+import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.junit.runners.JUnit4;
 
 import java.io.IOException;
 import java.util.List;
@@ -13,9 +16,11 @@ import java.util.List;
  * @author liuyi
  * @Date 2024/05/20
  */
+@RunWith(JUnit4.class)
 public class SshjTest {
 
-    public static void main(String[] args) {
+    @Test
+    public void test() {
         String host = "182.93.45.147"; // SFTP服务器地址
         int port = 22021; // SFTP服务器端口
         String username = "PP_SFTP"; // 用户名
