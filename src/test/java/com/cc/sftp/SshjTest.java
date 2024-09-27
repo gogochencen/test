@@ -1,4 +1,4 @@
-package com.cc;
+package com.cc.sftp;
 
 import net.schmizz.sshj.SSHClient;
 import net.schmizz.sshj.sftp.FileAttributes;
